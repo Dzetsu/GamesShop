@@ -1,0 +1,139 @@
+2025-03-21 19:56:13.757 +03:00 [INF] Starting up
+2025-03-21 19:58:07.220 +03:00 [INF] Starting up
+2025-03-21 19:58:35.762 +03:00 [INF] Starting up
+2025-03-22 17:09:27.328 +03:00 [INF] Starting web application
+2025-03-22 17:09:27.548 +03:00 [INF] Now listening on: http://localhost:5220
+2025-03-22 17:09:27.552 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-22 17:09:27.552 +03:00 [INF] Hosting environment: Development
+2025-03-22 17:09:27.553 +03:00 [INF] Content root path: F:\Projects\programms\ShopOfGames\OrderGame
+2025-03-22 17:09:27.630 +03:00 [INF] Command execution completed (duration=23ms): SELECT ord.id, ord.username, ord.nameofgame
+                                     FROM order_games.order ord
+                                     JOIN order_games.outbox out ON ord.id = out.order_id
+                                     WHERE ord.status = 'paid' AND out.status = 'no send'
+2025-03-22 17:09:27.800 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/swagger/index.html - null null
+2025-03-22 17:09:27.918 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/swagger/index.html - 200 null text/html;charset=utf-8 118.9654ms
+2025-03-22 17:09:27.974 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/swagger/v1/swagger.json - null null
+2025-03-22 17:09:28.050 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 76.3584ms
+2025-03-22 17:09:32.641 +03:00 [INF] Command execution completed (duration=5ms): SELECT ord.id, ord.username, ord.nameofgame
+                                     FROM order_games.order ord
+                                     JOIN order_games.outbox out ON ord.id = out.order_id
+                                     WHERE ord.status = 'paid' AND out.status = 'no send'
+2025-03-22 17:09:37.645 +03:00 [INF] Command execution completed (duration=1ms): SELECT ord.id, ord.username, ord.nameofgame
+                                     FROM order_games.order ord
+                                     JOIN order_games.outbox out ON ord.id = out.order_id
+                                     WHERE ord.status = 'paid' AND out.status = 'no send'
+2025-03-22 17:09:42.647 +03:00 [INF] Command execution completed (duration=1ms): SELECT ord.id, ord.username, ord.nameofgame
+                                     FROM order_games.order ord
+                                     JOIN order_games.outbox out ON ord.id = out.order_id
+                                     WHERE ord.status = 'paid' AND out.status = 'no send'
+2025-03-22 17:09:47.650 +03:00 [INF] Command execution completed (duration=0ms): SELECT ord.id, ord.username, ord.nameofgame
+                                     FROM order_games.order ord
+                                     JOIN order_games.outbox out ON ord.id = out.order_id
+                                     WHERE ord.status = 'paid' AND out.status = 'no send'
+2025-03-22 17:09:52.652 +03:00 [INF] Command execution completed (duration=1ms): SELECT ord.id, ord.username, ord.nameofgame
+                                     FROM order_games.order ord
+                                     JOIN order_games.outbox out ON ord.id = out.order_id
+                                     WHERE ord.status = 'paid' AND out.status = 'no send'
+2025-03-22 17:09:57.655 +03:00 [INF] Command execution completed (duration=1ms): SELECT ord.id, ord.username, ord.nameofgame
+                                     FROM order_games.order ord
+                                     JOIN order_games.outbox out ON ord.id = out.order_id
+                                     WHERE ord.status = 'paid' AND out.status = 'no send'
+2025-03-22 17:09:59.668 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/OrderGame - null null
+2025-03-22 17:09:59.675 +03:00 [WRN] Failed to determine the https port for redirect.
+2025-03-22 17:09:59.677 +03:00 [INF] Executing endpoint 'OrdersGame.Controllers.OrderGameController.GetAllGames (OrderGame)'
+2025-03-22 17:09:59.692 +03:00 [INF] Route matched with {action = "GetAllGames", controller = "OrderGame"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[OrderGame.Entities.Game]] GetAllGames() on controller OrdersGame.Controllers.OrderGameController (OrderGame).
+2025-03-22 17:09:59.700 +03:00 [INF] Executing action method OrdersGame.Controllers.OrderGameController.GetAllGames (OrderGame) - Validation state: "Valid"
+2025-03-22 17:09:59.743 +03:00 [INF] Command execution completed (duration=33ms): select * from order_games.games
+2025-03-22 17:09:59.747 +03:00 [INF] Executed action method OrdersGame.Controllers.OrderGameController.GetAllGames (OrderGame), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 43.3535ms.
+2025-03-22 17:09:59.754 +03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[OrderGame.Entities.Game, OrderGame, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-22 17:09:59.772 +03:00 [INF] Executed action OrdersGame.Controllers.OrderGameController.GetAllGames (OrderGame) in 75.9965ms
+2025-03-22 17:09:59.773 +03:00 [INF] Executed endpoint 'OrdersGame.Controllers.OrderGameController.GetAllGames (OrderGame)'
+2025-03-22 17:09:59.775 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/OrderGame - 200 null application/json; charset=utf-8 106.8115ms
+2025-03-22 17:10:02.118 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/OrderGame - null null
+2025-03-22 17:10:02.120 +03:00 [INF] Executing endpoint 'OrdersGame.Controllers.OrderGameController.GetAllGames (OrderGame)'
+2025-03-22 17:10:02.121 +03:00 [INF] Route matched with {action = "GetAllGames", controller = "OrderGame"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[OrderGame.Entities.Game]] GetAllGames() on controller OrdersGame.Controllers.OrderGameController (OrderGame).
+2025-03-22 17:10:02.123 +03:00 [INF] Executing action method OrdersGame.Controllers.OrderGameController.GetAllGames (OrderGame) - Validation state: "Valid"
+2025-03-22 17:10:02.130 +03:00 [INF] Command execution completed (duration=1ms): select * from order_games.games
+2025-03-22 17:10:02.131 +03:00 [INF] Executed action method OrdersGame.Controllers.OrderGameController.GetAllGames (OrderGame), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 7.5509ms.
+2025-03-22 17:10:02.132 +03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[OrderGame.Entities.Game, OrderGame, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-22 17:10:02.133 +03:00 [INF] Executed action OrdersGame.Controllers.OrderGameController.GetAllGames (OrderGame) in 10.7989ms
+2025-03-22 17:10:02.134 +03:00 [INF] Executed endpoint 'OrdersGame.Controllers.OrderGameController.GetAllGames (OrderGame)'
+2025-03-22 17:10:02.135 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/OrderGame - 200 null application/json; charset=utf-8 16.8761ms
+2025-03-22 17:10:02.658 +03:00 [INF] Command execution completed (duration=1ms): SELECT ord.id, ord.username, ord.nameofgame
+                                     FROM order_games.order ord
+                                     JOIN order_games.outbox out ON ord.id = out.order_id
+                                     WHERE ord.status = 'paid' AND out.status = 'no send'
+2025-03-22 17:10:07.660 +03:00 [INF] Command execution completed (duration=1ms): SELECT ord.id, ord.username, ord.nameofgame
+                                     FROM order_games.order ord
+                                     JOIN order_games.outbox out ON ord.id = out.order_id
+                                     WHERE ord.status = 'paid' AND out.status = 'no send'
+2025-03-22 17:10:12.663 +03:00 [INF] Command execution completed (duration=1ms): SELECT ord.id, ord.username, ord.nameofgame
+                                     FROM order_games.order ord
+                                     JOIN order_games.outbox out ON ord.id = out.order_id
+                                     WHERE ord.status = 'paid' AND out.status = 'no send'
+2025-03-22 17:10:17.665 +03:00 [INF] Command execution completed (duration=1ms): SELECT ord.id, ord.username, ord.nameofgame
+                                     FROM order_games.order ord
+                                     JOIN order_games.outbox out ON ord.id = out.order_id
+                                     WHERE ord.status = 'paid' AND out.status = 'no send'
+2025-03-22 17:10:19.385 +03:00 [INF] Application is shutting down...
+2025-03-22 17:19:27.451 +03:00 [INF] Starting web application
+2025-03-22 17:19:27.669 +03:00 [INF] Now listening on: http://localhost:5220
+2025-03-22 17:19:27.673 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-22 17:19:27.674 +03:00 [INF] Hosting environment: Development
+2025-03-22 17:19:27.675 +03:00 [INF] Content root path: F:\Projects\programms\ShopOfGames\OrderGame
+2025-03-22 17:19:27.743 +03:00 [INF] Command execution completed (duration=15ms): SELECT ord.id, ord.username, ord.nameofgame
+                                     FROM order_games.order ord
+                                     JOIN order_games.outbox out ON ord.id = out.order_id
+                                     WHERE ord.status = 'paid' AND out.status = 'no send'
+2025-03-22 17:19:27.883 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/swagger/index.html - null null
+2025-03-22 17:19:28.004 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/swagger/index.html - 200 null text/html;charset=utf-8 121.8386ms
+2025-03-22 17:19:28.057 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/swagger/v1/swagger.json - null null
+2025-03-22 17:19:28.129 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 73.0454ms
+2025-03-22 17:19:32.762 +03:00 [INF] Command execution completed (duration=5ms): SELECT ord.id, ord.username, ord.nameofgame
+                                     FROM order_games.order ord
+                                     JOIN order_games.outbox out ON ord.id = out.order_id
+                                     WHERE ord.status = 'paid' AND out.status = 'no send'
+2025-03-22 17:19:36.230 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5220/OrderGame - null null
+2025-03-22 17:19:36.237 +03:00 [WRN] Failed to determine the https port for redirect.
+2025-03-22 17:19:36.239 +03:00 [INF] Executing endpoint 'OrdersGame.Controllers.OrderGameController.GetAllGames (OrderGame)'
+2025-03-22 17:19:36.254 +03:00 [INF] Route matched with {action = "GetAllGames", controller = "OrderGame"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[OrderGame.Entities.Game]] GetAllGames() on controller OrdersGame.Controllers.OrderGameController (OrderGame).
+2025-03-22 17:19:36.262 +03:00 [INF] Executing action method OrdersGame.Controllers.OrderGameController.GetAllGames (OrderGame) - Validation state: "Valid"
+2025-03-22 17:19:36.308 +03:00 [INF] Command execution completed (duration=36ms): select * from order_games.games
+2025-03-22 17:19:36.312 +03:00 [INF] Executed action method OrdersGame.Controllers.OrderGameController.GetAllGames (OrderGame), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 46.9293ms.
+2025-03-22 17:19:36.320 +03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[OrderGame.Entities.Game, OrderGame, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-22 17:19:36.338 +03:00 [INF] Executed action OrdersGame.Controllers.OrderGameController.GetAllGames (OrderGame) in 79.8159ms
+2025-03-22 17:19:36.339 +03:00 [INF] Executed endpoint 'OrdersGame.Controllers.OrderGameController.GetAllGames (OrderGame)'
+2025-03-22 17:19:36.342 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5220/OrderGame - 200 null application/json; charset=utf-8 111.3915ms
+2025-03-22 17:19:37.766 +03:00 [INF] Command execution completed (duration=1ms): SELECT ord.id, ord.username, ord.nameofgame
+                                     FROM order_games.order ord
+                                     JOIN order_games.outbox out ON ord.id = out.order_id
+                                     WHERE ord.status = 'paid' AND out.status = 'no send'
+2025-03-22 17:19:42.769 +03:00 [INF] Command execution completed (duration=1ms): SELECT ord.id, ord.username, ord.nameofgame
+                                     FROM order_games.order ord
+                                     JOIN order_games.outbox out ON ord.id = out.order_id
+                                     WHERE ord.status = 'paid' AND out.status = 'no send'
+2025-03-22 17:19:47.773 +03:00 [INF] Command execution completed (duration=1ms): SELECT ord.id, ord.username, ord.nameofgame
+                                     FROM order_games.order ord
+                                     JOIN order_games.outbox out ON ord.id = out.order_id
+                                     WHERE ord.status = 'paid' AND out.status = 'no send'
+2025-03-22 17:19:52.775 +03:00 [INF] Command execution completed (duration=1ms): SELECT ord.id, ord.username, ord.nameofgame
+                                     FROM order_games.order ord
+                                     JOIN order_games.outbox out ON ord.id = out.order_id
+                                     WHERE ord.status = 'paid' AND out.status = 'no send'
+2025-03-22 17:19:57.778 +03:00 [INF] Command execution completed (duration=1ms): SELECT ord.id, ord.username, ord.nameofgame
+                                     FROM order_games.order ord
+                                     JOIN order_games.outbox out ON ord.id = out.order_id
+                                     WHERE ord.status = 'paid' AND out.status = 'no send'
+2025-03-22 17:20:02.781 +03:00 [INF] Command execution completed (duration=0ms): SELECT ord.id, ord.username, ord.nameofgame
+                                     FROM order_games.order ord
+                                     JOIN order_games.outbox out ON ord.id = out.order_id
+                                     WHERE ord.status = 'paid' AND out.status = 'no send'
+2025-03-22 17:20:07.782 +03:00 [INF] Command execution completed (duration=1ms): SELECT ord.id, ord.username, ord.nameofgame
+                                     FROM order_games.order ord
+                                     JOIN order_games.outbox out ON ord.id = out.order_id
+                                     WHERE ord.status = 'paid' AND out.status = 'no send'
+2025-03-22 17:20:12.785 +03:00 [INF] Command execution completed (duration=1ms): SELECT ord.id, ord.username, ord.nameofgame
+                                     FROM order_games.order ord
+                                     JOIN order_games.outbox out ON ord.id = out.order_id
+                                     WHERE ord.status = 'paid' AND out.status = 'no send'
+2025-03-22 17:20:17.028 +03:00 [INF] Application is shutting down...
